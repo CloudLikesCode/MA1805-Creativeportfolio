@@ -15,7 +15,7 @@ let count = 0;
 function setup() {
   // Create a 400x400 pixel canvas
   createCanvas(400, 400);
-  
+
   // No outline for shapes
   
 }
@@ -32,6 +32,21 @@ function draw(){
       
       // Draw a square at the current position
       rect(x, y, 20, 20); // Draw a 20x20 square
+
+
+
+      fill(myFill);
+      rect(x, y, w, h); // x, y, size
+    
+      if(mouseX > x && mouseX < x+w && mouseY > y && mouseY < y + h){
+        myFill = [255, 0, 0];
+        count++;
+      }else{
+        myFill = 255;
+        fill(0)
+        textSize(20);
+        text(count, x+20, y+30)
+      }
     }
   }
   
