@@ -7,6 +7,14 @@
 let items = [];
 let score = 0;
 
+
+function preload() {
+  mySound = loadSound('C:\Users\Owner\OneDrive - Royal Holloway University of London\MattHandsMA1805 - CFTA\MA1805-Creativeportfolio\sound\237437__noisecollector__bulletimpact_metal2'); // Change to your sound file path
+}
+
+
+
+
 function setup() {
   createCanvas(400, 400);
   for (let i = 0; i < 10; i++) {
@@ -29,7 +37,6 @@ function mousePressed() {
     if (items[i].isClicked(mouseX, mouseY)) {
       score++;
       items.splice(i, 1);
-      mySound.play(); 
       mySound.play(); 
     }
   }
