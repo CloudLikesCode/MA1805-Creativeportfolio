@@ -29,6 +29,8 @@ function mousePressed() {
     if (items[i].isClicked(mouseX, mouseY)) {
       score++;
       items.splice(i, 1);
+      mySound.play(); 
+      mySound.play(); 
     }
   }
 }

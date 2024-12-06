@@ -1,8 +1,8 @@
 let i = 0;
 
 // Text obtained from  UK Government website 
-const housingText = "A robot may not injure a human being or, through inaction, allow a human being to come to harm. A robot must obey orders given it by human beings except where such orders would conflict with the First Law. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.";
-const textArray = housingText.split(" "); // Convert the text into an an array (list) of words. 
+const RobotTextText = "A robot may not injure a human being or, through inaction, allow a human being to come to harm. A robot must obey orders given it by human beings except where such orders would conflict with the First Law. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.";
+const textArray = RobotText.split(" "); // Convert the text into an an array (list) of words. 
 
 
 function setup(){
